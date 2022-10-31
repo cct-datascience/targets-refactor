@@ -8,9 +8,9 @@ library(janitor)
 
 # read and wrangle data ---------------------------------------------------
 
-hbr_maples_raw <- read_csv("data/hbr_maples_raw.csv")
+maples_raw <- read_csv("data/hbr_maples_raw.csv")
 
-hbr_maples <- hbr_maples_raw %>%
+maples <- maples_raw %>%
   clean_names() %>%
   select(-root_area,-root_length,-root_dry_mass) %>%
   # change values of -999 to NA
@@ -24,9 +24,9 @@ hbr_maples <- hbr_maples_raw %>%
     sample = as.factor(sample)
   )
 
-hbr_maples
+maples
 
 
 # Save wrangled data ------------------------------------------------------
 
-write_rds(hbr_maples, "data/hbr_maples.rds")
+write_rds(maples, "data/maples.rds")

@@ -8,19 +8,19 @@ library(broom) # for tidy() and augment()
 
 # Read in data ------------------------------------------------------------
 
-hbr_maples <- read_rds("data/hbr_maples.rds")
+maples <- read_rds("data/maples.rds")
 
 # Calculate total mass ----------------------------------------------------
 
-hbr_maples <- 
-  hbr_maples %>%
+maples <- 
+  maples %>%
   mutate(total_mass = stem_dry_mass + leaf_dry_mass)
 
 # Fit model --------------------------------------------------------------
 
 # is stem length a good predictor of total mass? does that relationship depend on watershed?
 
-stem_lm2 <- lm(total_mass ~ stem_length * watershed, data = hbr_maples)
+stem_lm2 <- lm(total_mass ~ stem_length * watershed, data = maples)
 
 # Hypothesis testing ------------------------------------------------------
 
