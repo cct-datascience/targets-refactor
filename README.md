@@ -14,3 +14,6 @@ This is a simple example research compendium to practice refactoring a project t
 6) run workflow with `tar_make()`
 7) possibly debug functions and targets workflow
 
+### Bonus challenge exercise:
+
+Create a `report.Rmd` or `report.Qmd` document that includes plots and the ANOVA results and render it in the targets pipeline with `tar_render()` or `tar_quarto()`.
