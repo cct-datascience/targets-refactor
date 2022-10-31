@@ -17,3 +17,5 @@ This is a simple example research compendium to practice refactoring a project t
 ### Bonus challenge exercise:
 
 Create a `report.Rmd` or `report.Qmd` document that includes plots and the ANOVA results and render it in the targets pipeline with `tar_render()` or `tar_quarto()`.
+
+("answers" are in the [refactor branch](https://github.com/cct-datascience/targets-refactor/tree/refactor))
