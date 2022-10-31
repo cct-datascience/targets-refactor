@@ -30,5 +30,6 @@ tar_plan(
   #sometimes I keep simple code in tar_target() instead of writing a function
   tar_target(stem_lm, lm(total_mass ~ stem_length * watershed, data = maples)),
   tar_target(stem_anova, Anova(stem_lm) %>% tidy()),
-  tar_target(plot_model, make_plot_model(stem_lm))
+  tar_target(plot_model, make_plot_model(stem_lm)),
+  tar_render(report, "docs/report.Rmd")
 )

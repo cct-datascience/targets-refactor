@@ -1,0 +1,50 @@
+---
+title: "Report"
+author: "Eric R. Scott"
+date: "2022-10-31"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Exploratory data analysis
+
+Does it look like seedlings differ in height in different watersheds?
+
+```{r}
+tar_read(plot_boxplot)
+```
+
+In both years it looks like seedlings were taller in calcium treated watersheds
+
+## Summary Statistics
+
+```{r}
+tar_read(tbl_summary)
+```
+
+
+# Modeling
+
+We can fit a model to test if there is a relationship between seedling mass and stem height, and if that slope differs by watershed.
+
+```{r echo=FALSE,render='asis'}
+library(equatiomatic)
+extract_eq(tar_read(stem_lm))
+```
+
+# Results
+
+There is strong evidence for a relationship between stem length and mass (p < 0.001), an effect of watershed (p < 0.001) with plants in the calcium-treated watersheds being taller, but no significant interaction (p = 0.07) indicating no difference in slope by watershed.
+
+```{r}
+tar_read(stem_anova) %>% knitr::kable()
+```
+
+
+```{r}
+tar_read(plot_model)
+```
+

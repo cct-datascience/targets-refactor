@@ -8,6 +8,7 @@ maples_file|stem|f68ea9292be1eda6|dd4f792bcadee1a8|ef46db3751d8e999|1097698229|d
 plot_boxplot|stem|39669607ad5bc80b|171d0f0741b6dfa7|a967066aa388e8c9|506612483||t19296.8275484064s|b5da1d451061f84e|85204|rds|local|vector|||0.02||
 plot_model|stem|09ed5775033eff78|f6710c42e99f66b0|4b301172b29bf397|-193912284||t19296.8300469954s|972fe7e39cf72ce9|137001|rds|local|vector|||0.027||
 read_wrangle_data|function|a44ab7560c915c47|||||||||||||||
+report|stem|fc6ebd9ba1734d36|28df88486fb0c50e|516c25ce5ff27317|-237041703|docs/report.html*docs/report.Rmd|t19296.8362166954s|4cbbeec7f04e5d87|1114435|file|local|vector|||2.452||
 stem_anova|stem|22db790bffabcba6|46d3db2afda7b637|00640872d0499622|-516506330||t19296.8290482483s|e072d1f063c229c1|384|rds|local|vector|||0.029||
 stem_lm|stem|dd31ce402ce73800|5a9ab32f4846eb89|90beabaff1de81d8|1925459895||t19296.8290477373s|e1dd09b55c000c71|24782|rds|local|vector|||0.005||
 tbl_summary|stem|6655ddefc82263aa|845d607b7ae8e412|df9af332349cd5f3|-1427508088||t19296.8275475722s|7f6efb6d9faceac0|456|rds|local|vector|||0.043||
