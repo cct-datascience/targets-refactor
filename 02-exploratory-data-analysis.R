@@ -7,12 +7,12 @@ library(tidyverse)
 
 # Load data ---------------------------------------------------------------
 
-hbr_maples <- read_rds("data/hbr_maples.rds")
+maples <- read_rds("data/maples.rds")
 
 
 # Make a boxplot by watershed -------------------------------------------------
 
-ggplot(data = hbr_maples, aes(x = watershed, y = stem_length)) +
+ggplot(data = maples, aes(x = watershed, y = stem_length)) +
   geom_boxplot(aes(color = watershed, shape = watershed),
                alpha = 0.8,
                width = 0.5) +
@@ -34,7 +34,7 @@ ggplot(data = hbr_maples, aes(x = watershed, y = stem_length)) +
 
 # Summary statistics ------------------------------------------------------
 
-maple_summary <- hbr_maples %>% 
+maple_summary <- maples %>% 
   drop_na(stem_length) %>% 
   group_by(year, watershed) %>% 
   summarize(
