@@ -1,0 +1,14 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+maples_file|stem|1b7f49db1babd922|cab752db0d844943|2c530c1562a7fbd1|430758754|data/hbr_maples_raw.csv|t20130.8751516018s|s32233b|32233|file|local|vector|||0.972||
+maples|stem|34483ab52783e43c|029c8214edc984a9|ffa6f291f8320b83|2142750556||t20130.8819484066s|s8870b|8870|rds|local|vector|||0.362||
+stem_lm|stem|ba02c56939dfcb24|03e9e2a6216f8a67|015d59dfc91278c6|659614892||t20130.8819486842s|s24775b|24775|rds|local|vector|||0.004||
+tbl_summary|stem|f5d37e1aa4c5bcdb|53108f2b6cbf7278|987e37950b979fda|1327455152||t20130.8819493565s|s456b|456|rds|local|vector|||0.042||
+plot_boxplot|stem|ed63b38e7e058fb4|933006164155ac35|1503b143b5048d7f|542102452||t20130.8819504667s|s161948b|161948|rds|local|vector|||0.025||
+plot_model|stem|a790904f768cc73b|0931f9c912d8bdc8|e53f42db1cace72d|-89675236||t20130.8819516041s|s252534b|252534|rds|local|vector|||0.026||
+stem_anova|stem|c3001cf273b6b0a9|c5b4c67907e6f28a|9afee436355ac681|-823139664||t20130.8819554882s|s386b|386|rds|local|vector|||0.327||
+report|stem|41787648235679ac|72c1c92e487b7d52|18ad81bb8656f441|787668912|docs/report.html*docs/report.Rmd|t20130.898068543s|s1113857b|1113857|file|local|vector|||2.34||
+make_tbl_summary|function|629efe3c6ae4c78b
+fit_model|function|49f8a621e86523d6
+read_wrangle_data|function|c856611b25eaaf81
+make_plot_boxplot|function|1f1fd16ef9c2eed3
+make_plot_model|function|36086d68f68876eb
