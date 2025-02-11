@@ -4,10 +4,10 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-This is a simple example research compendium to practice refactoring a project to use `targets`.  To switch this over to using `targets` :
+This is a simple example research compendium to practice refactoring a project to use `targets`.  To refactor this project to use `targets` :
 
 1) run `targets::use_targets()` to set up some infrastructure
-2) turn analysis code into functions saved in .R files in a `R/` folder
+2) turn the analysis scripts into functions saved in .R files in a `R/` folder
 3) edit `_targets.R` to load necessary packages
 4) edit `_targets.R` to write analysis steps as targets with `tar_target()`
 5) check workflow with `tar_manifest()` and `tar_visnetwork()`
