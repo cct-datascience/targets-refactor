@@ -2,13 +2,14 @@
 
 # Load packages -----------------------------------------------------------
 
-library(tidyverse)
+library(dplyr)
 library(car) # for Anova()
 library(broom) # for tidy() and augment()
+library(ggplot2)
 
 # Read in data ------------------------------------------------------------
 
-maples <- read_rds("data/maples.rds")
+maples <- readRDS("data/maples.rds")
 
 # Calculate total mass ----------------------------------------------------
 

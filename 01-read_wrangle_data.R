@@ -2,13 +2,12 @@
 
 # load packages -----------------------------------------------------------
 
-library(readr)
 library(dplyr)
 library(janitor)
 
 # read and wrangle data ---------------------------------------------------
 
-maples_raw <- read_csv("data/hbr_maples_raw.csv")
+maples_raw <- read.csv("data/hbr_maples_raw.csv")
 
 maples <- maples_raw %>%
   clean_names() %>%
@@ -29,4 +28,4 @@ maples
 
 # Save wrangled data ------------------------------------------------------
 
-write_rds(maples, "data/maples.rds")
+saveRDS(maples, "data/maples.rds")

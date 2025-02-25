@@ -2,12 +2,13 @@
 
 # Load packages -----------------------------------------------------------
 
-library(tidyverse)
+library(ggplot2)
+library(dplyr)
 
 
 # Load data ---------------------------------------------------------------
 
-maples <- read_rds("data/maples.rds")
+maples <- readRDS("data/maples.rds")
 
 
 # Make a boxplot by watershed -------------------------------------------------
@@ -35,7 +36,7 @@ ggplot(data = maples, aes(x = watershed, y = stem_length)) +
 # Summary statistics ------------------------------------------------------
 
 maple_summary <- maples %>% 
-  drop_na(stem_length) %>% 
+  filter(!is.na(stem_length)) %>% 
   group_by(year, watershed) %>% 
   summarize(
     mean_length = mean(stem_length),
