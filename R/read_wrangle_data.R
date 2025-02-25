@@ -1,5 +1,5 @@
 read_wrangle_data <- function(maples_file) {
-  maples_raw <- read_csv(maples_file)
+  maples_raw <- read.csv(maples_file)
   
   maples_raw %>%
     clean_names() %>%

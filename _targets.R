@@ -7,7 +7,7 @@ library(tarchetypes)
 # Set target options:
 tar_option_set(
   # packages that your targets need to run
-  packages = c("tidyverse", "janitor", "broom", "car", "equatiomatic") 
+  packages = c("dplyr", "ggplot2", "janitor", "broom", "car") 
   # Set other options as needed.
 )
 
